@@ -15,7 +15,14 @@ public class Main {
 	sg[1]=s2;
 	s.setStudents(sg);
 	Student a[]=s.getStudents();
-	System.out.println(a.length);
+	for(int i=0;i<a.length;i++)
+	{
+	Student b=a[i];
+	System.out.println(b.getId());
+	}
+	s.remove(0);
+	Student d[]=s.getStudents();
+	/*System.out.println(a.length);
 	for(int i=0;i<a.length;i++)
 	{
 	Student b=a[i];
@@ -25,10 +32,10 @@ public class Main {
 	//System.out.println(ex.getId());
 	s.setStudent(s1,1);
 	Student c[]=s.getStudents();
-	System.out.println("After ");
-	for(int i=0;i<a.length;i++)
+	System.out.println("After ");*/
+	for(int i=0;i<d.length;i++)
 	{
-	Student b=c[i];
+	Student b=d[i];
 	System.out.println(b.getId());
 	}
 	}

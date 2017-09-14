@@ -85,17 +85,56 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void add(Student student, int index) {
-		// Add your implementation here
+		int n=students.length;
+		if(index>n)
+		{
+			throw new IllegalArgumentException("Error: ");
+		}
+		else
+		{
+			
+			this.students[index]=student;
+		}
 	}
 
 	@Override
 	public void remove(int index) {
-		// Add your implementation here
+		if(index>students.length-1 || this.students==null)
+		{
+			throw new IllegalArgumentException("Error");
+		}
+		else
+		{
+
+			Student s[]=new Student[students.length-1];
+			for(int j=0;j<index;j++)
+			s[j]=students[j];
+			for(int i=index;i<students.length-1;i++)
+			s[i]=students[i+1];
+			students=s;
+
+		}
 	}
 
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
+		
+			for(int i=0;i<students.length;i++)
+			{
+				if(students[i].getId()==student.getId())
+				{
+					Student s[]=new Student[students.length-1];
+					for(int j=0;j<i;j++)
+					s[j]=students[j];
+					for(int j=i;j<students.length-1;j++)
+					s[j]=students[j+1];
+					students=s;
+				}
+			}
+			
+
+		
 	}
 
 	@Override
