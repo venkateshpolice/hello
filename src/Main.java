@@ -20,7 +20,7 @@ public class Main {
 	Student b=a[i];
 	System.out.println(b.getId());
 	}
-	s.addLast(s1);
+	System.out.println(s.getNextStudent(s1).getId());
 	Student d[]=s.getStudents();
 	/*System.out.println(a.length);
 	for(int i=0;i<a.length;i++)
