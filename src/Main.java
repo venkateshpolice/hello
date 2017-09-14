@@ -14,13 +14,15 @@ public class Main {
 	sg[0]=s1;
 	sg[1]=s2;
 	s.setStudents(sg);
-	Student a[]=s.getStudents();
+
+	//Student a[]=s.getStudents();
+	Student a[]=s.getStudentsWithMaxAvgMark();
 	for(int i=0;i<a.length;i++)
 	{
 	Student b=a[i];
 	System.out.println(b.getId());
 	}
-	System.out.println(s.getNextStudent(s1).getId());
+	//System.out.println(s.getNextStudent(s1).getId());
 	Student d[]=s.getStudents();
 	/*System.out.println(a.length);
 	for(int i=0;i<a.length;i++)
@@ -33,11 +35,11 @@ public class Main {
 	s.setStudent(s1,1);
 	Student c[]=s.getStudents();
 	System.out.println("After ");*/
-	for(int i=0;i<d.length;i++)
+	/*for(int i=0;i<d.length;i++)
 	{
 	Student b=d[i];
 	System.out.println(b.getId());
-	}
+	}*/
 	}
 
 }
