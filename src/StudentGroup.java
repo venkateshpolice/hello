@@ -239,7 +239,7 @@ public class StudentGroup implements StudentArrayOperation {
 		{
 			throw new IllegalArgumentException("Error");
 		}
-			Student s=students[0];
+			Student s=null;
 			for(int i=0;i<students.length;i++)
 				{
 					if(students[i].getId()==student.getId())
